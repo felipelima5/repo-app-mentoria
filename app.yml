@@ -61,3 +61,13 @@ spec:
                 name: service-2048
                 port:
                   number: 80
+    - host: k8s-app-ingressa-d1fe68e387-249402320.us-east-1.elb.amazonaws.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: service-2048
+                port:
+                  number: 80
